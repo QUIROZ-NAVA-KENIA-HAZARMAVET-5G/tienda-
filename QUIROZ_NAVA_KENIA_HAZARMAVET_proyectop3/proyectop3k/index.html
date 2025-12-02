@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PeluChic — Peluches Tejidos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ 
+  <header class="header">
+    <div class="brand">
+      <img class="logo" src="imagenes/logo.jpeg" alt="Logo PeluChic">
+      <h1 class="brand-name">kenini artesanias</h1>
+      <span class="tagline">Peluches tejidos con amor</span>
+    </div>
+  
+
+    <div class="header-actions">
+      <div class="search">
+        <input id="searchInput" type="text" placeholder="Buscar peluche..." />
+        <button id="searchBtn" class="btn btn-primary">Buscar</button>
+      </div>
+
+      <div class="user-controls">
+        <button id="favoritesBtn" class="icon-btn">❤️ <span id="favCount" class="badge">0</span></button>
+        <button id="cartBtn" class="icon-btn">🛒 <span id="cartCount" class="badge">0</span></button>
+        <button id="loginBtn" class="btn btn-secondary">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="filter-toggle-container">
+    <button id="filtersToggle" class="btn-outline">⚙️ Filtros</button>
+  </div>
+
+ 
+  <aside id="filtersPanel" class="filters-panel">
+    <h3>Filtrar productos</h3>
+
+    <div class="filter-chips">
+      <div class="chip active" data-chip="todas">Todas</div>
+      <div class="chip" data-chip="animales">🐻 Animales</div>
+      <div class="chip" data-chip="fantasia">🦄 Fantasía</div>
+      <div class="chip" data-chip="coleccion">⭐ Colección</div>
+      <div class="chip" data-chip="flores">🌸 flores</div>
+    </div>
+
+    <br>
+
+    <div class="filter-group">
+      <label>Ordenar</label>
+      <div class="select-wrap">
+        <select id="sortSelect">
+          <option value="popular">🔥 Más populares</option>
+          <option value="precio_asc">⬆️ Menor precio</option>
+          <option value="precio_desc">⬇️ Mayor precio</option>
+        </select>
+      </div>
+    </div>
+
+    <br>
+    <button id="clearFilters" class="btn-outline">Limpiar filtros</button>
+  </aside>
+
+  
+  <main class="catalog" id="catalog"></main>
+
+  
+  <div class="modal" id="cartModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close="cartModal">✕</button>
+      <h2>Tu carrito</h2>
+      <div id="cartItems"></div>
+      <div class="cart-summary">
+        <div class="summary-line"><span>Subtotal</span> <strong id="cartSubtotal">$0.00</strong></div>
+        <button id="checkoutBtn" class="btn btn-primary">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal" id="favoritesModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close="favoritesModal">✕</button>
+      <h2>Mis favoritos</h2>
+      <div id="favoritesItems"></div>
+    </div>
+  </div>
+
+
+  <div class="modal" id="loginModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close="loginModal">✕</button>
+      <h2>Iniciar sesión</h2>
+
+      <form id="loginForm" class="form">
+        <div class="form-group">
+          <label for="email">Correo</label>
+          <input id="email" type="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input id="password" type="password" required />
+        </div>
+
+        <button class="btn btn-primary">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="modal" id="thankyouModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close="thankyouModal">✕</button>
+      <h2>¡Gracias por su compra! 🧸🎉</h2>
+
+      <p>Estos son los productos que adquiriste:</p>
+
+      <div id="thankyouItems"></div>
+
+      <button class="btn btn-primary" data-close="thankyouModal">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
