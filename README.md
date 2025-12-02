@@ -90,9 +90,9 @@ y una función showModal(id).
 
 📥 Instalación y uso
 
-Descarga o clona el repositorio:
+Descarga o utiliza el enlace a la tienda:
 
-git clone http://127.0.0.1:5500/proyectop3k/index.html
+enlace: http://127.0.0.1:5500/proyectop3k/index.html
 
 
 Abre index.html en tu navegador:
