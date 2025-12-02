@@ -88,10 +88,6 @@ Apertura y cierre mediante atributos:
 
 y una función showModal(id).
 
-Agrega aquí capturas si lo deseas:
-
-![preview](ruta/imagen.png)
-
 📥 Instalación y uso
 
 Descarga o clona el repositorio:
