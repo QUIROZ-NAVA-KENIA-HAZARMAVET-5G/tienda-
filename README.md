@@ -88,8 +88,6 @@ Apertura y cierre mediante atributos:
 
 y una función showModal(id).
 
-📸 Vista previa (opcional)
-
 Agrega aquí capturas si lo deseas:
 
 ![preview](ruta/imagen.png)
@@ -98,7 +96,7 @@ Agrega aquí capturas si lo deseas:
 
 Descarga o clona el repositorio:
 
-git clone https://github.com/tuusuario/kenini-artesanias.git
+git clone http://127.0.0.1:5500/proyectop3k/index.html
 
 
 Abre index.html en tu navegador:
